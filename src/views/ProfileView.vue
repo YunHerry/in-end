@@ -236,12 +236,12 @@
       color: #101010;
     }
     .likely-list {
-        display: flex;
-        .likely-item {
-            padding: 6px 20px;
-            text-align: center;
-            border: 1px solid #101010;
-        }
+      display: flex;
+      .likely-item {
+        padding: 6px 20px;
+        text-align: center;
+        border: 1px solid #101010;
+      }
     }
   }
 }

@@ -1,26 +1,4 @@
 <template>
-  <div class="index-content">
-    <div class="header">
-      <div class="btns">
-        <div class="btn">主页</div>
-        <div class="btn">主页</div>
-        <div class="btn">主页</div>
-        <div class="btn">主页</div>
-      </div>
-      <div class="right-content">
-        <div type="text" class="input">
-          <div class="input-icon"></div>
-          <input class="input-content" placeholder="Type here to search" />
-          <div class="input-icon-star">
-            <el-icon :size="19">
-              <Star />
-            </el-icon>
-          </div>
-        </div>
-        <div class="avatar"></div>
-      </div>
-    </div>
-    <div class="content">
       <div class="col-content">
         <div class="main-content">
           <div class="essay-title">张无忌真不是个东西！</div>
@@ -163,8 +141,8 @@
           <div class="cheat">
             <div class="cheat-title">聊天区</div>
             <div class="cheat-search">
-                <input type="text" placeholder="请输入搜索内容">
-                <div class="search-btn">搜索</div>
+              <input type="text" placeholder="请输入搜索内容" />
+              <div class="search-btn">搜索</div>
             </div>
             <div class="cheat-content">
               <div class="cheat-item">
@@ -190,101 +168,11 @@
           </div> -->
         </div>
       </div>
-    </div>
-  </div>
 </template>
 <style lang="scss" scoped>
-.header {
-  width: 100%;
-  height: 74px;
-  background-color: #000000;
-  display: flex;
-  justify-content: space-between;
-  .avatar {
-    width: 62px;
-    height: 59px;
-    margin-right: 63px;
-    margin-left: 128px;
-    background-color: #ffffff;
-    border-radius: 50%;
-  }
-}
-.btns {
-  font-size: 24px;
-  color: #a8c4e0;
-  display: flex;
-  height: 100%;
-  align-items: center;
-  margin-left: 232px;
-}
-.btn:nth-child(n + 1) {
-  margin-left: 50px;
-}
-.right-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.input {
-  width: 345px;
-  height: 41px;
-  background-color: #333536;
-  border-radius: 20px;
-  border: 0;
-  display: flex;
-  align-items: center;
-  padding-left: 12px;
-  padding-right: 16px;
-}
-.input-icon {
-  width: 19px;
-  height: 19px;
-  border-radius: 10px;
-  border: 2px solid #ffffff;
-}
-.input-content {
-  flex: 1;
-  background-color: transparent;
-  border: 0;
-  outline: none;
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.5);
-  padding: 11px;
-  box-sizing: border-box;
-}
-.input-icon-star {
-  width: 19px;
-  height: 19px;
-  color: white;
-}
-
 /**
   
   */
-.content {
-  width: 100%;
-}
-.banner {
-  width: 100%;
-}
-.el-carousel__item h3 {
-  color: #475669;
-  opacity: 0.75;
-  line-height: 150px;
-  margin: 0;
-  text-align: center;
-}
-
-.el-carousel__item:nth-child(2n) {
-  background-color: #99a9bf;
-}
-
-.el-carousel__item:nth-child(2n + 1) {
-  background-color: #d3dce6;
-}
-.banner-item {
-  height: 100%;
-}
 .col-content {
   padding: 21px;
   box-sizing: border-box;
@@ -489,20 +377,20 @@
       margin-top: 20px;
     }
     .cheat-search {
-        display: flex;
-        align-items: center;
-       input {
+      display: flex;
+      align-items: center;
+      input {
         outline: none;
         border: 0;
         border-radius: 20px;
-        background-color: #F2F2F7;
+        background-color: #f2f2f7;
         height: 34px;
         flex: 1;
         padding-left: 10px;
-       }
-       .search-btn {
+      }
+      .search-btn {
         margin-left: 10px;
-        background-color: #F2F2F7;
+        background-color: #f2f2f7;
         width: 48px;
         height: 33px;
         border-radius: 20px;
@@ -510,7 +398,7 @@
         align-items: center;
         justify-content: center;
         font-size: 14px;
-       }
+      }
     }
     .cheat-content {
       .cheat-item {
