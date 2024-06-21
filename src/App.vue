@@ -1,9 +1,7 @@
 <template>
   <div class="index-content">
     <Header></Header>
-    <div class="content">
-      <router-view></router-view>
-    </div>
+    <router-view></router-view>
   </div>
 </template>
 <script setup>

@@ -136,7 +136,7 @@
     </div>
   </div>
 </template>
-<style lang="scss">
+<style lang="scss" scoped>
 .column-table {
   display: flex;
   .col {
