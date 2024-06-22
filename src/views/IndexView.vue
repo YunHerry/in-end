@@ -126,7 +126,7 @@ const menus = [
   padding: 26px 0;
   .recommend-item {
     display: flex;
-    font-size: 30px;
+    font-size: 26px;
     align-items: center;
     margin-left: 21px;
     margin-bottom: 30px;

@@ -13,7 +13,10 @@
       <button class="btn active">全部</button>
     </div>
   </div>
-  <el-divider border-style="dashed" />
+
+  <div style="display: flex; justify-content: center">
+    <div style="width: 80%"><el-divider border-style="dashed" /></div>
+  </div>
   <div class="other-option">
     <span>其他选项: </span>
     <div class="option-list">
@@ -52,14 +55,14 @@
     </div>
   </div>
   <div class="lesson-list">
-    <el-card body-style="padding:0;">
+    <el-card body-style="padding:0;" style="width: 260px">
       <div class="lesson-item">
         <el-image
           style="width: 266px; height: 160px"
           :src="'http://gips0.baidu.com/it/u=1690853528,2506870245&fm=3028&app=3028&f=JPEG&fmt=auto?w=1024&h=1024'"
           :fit="'cover'"
         />
-        <div class="content">
+        <div class="lesson-content">
           <div class="title">我是标题</div>
           <div class="description">我是简介</div>
           <div class="info">
@@ -87,95 +90,89 @@ const rate = ref("不限");
 .lesson-info {
   display: flex;
 }
-</style>
-<style lang="scss">
-.content {
-  .el-card {
-    margin: 30px;
-  }
-}
-.lesson-info {
-  box-sizing: border-box;
+.search-content {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  .teacher-info {
-    box-sizing: border-box;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    .name {
-      font-size: 28px;
-      color: #222222;
-    }
-    .cart {
-      font-size: 16px;
-      color: #666666;
-    }
-  }
-  .download-size {
-    .unit {
-      color: #999999;
-      font-size: 16px;
-    }
-    .size {
-      font-size: 28px;
-      color: #f7c160;
-    }
-  }
-}
-.audio {
-  width: 100%;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  height: 670px;
-  position: relative;
-  .mask {
-    width: 80%;
-    height: 100%;
-    background-color: rgba($color: #000000, $alpha: 0.6);
+  align-items: center;
+  height: 200px;
+  .search-btn {
+    background-color: #1890ff;
+    height: 60px;
+    width: 104px;
+    border: 0;
     color: white;
-
-    position: absolute;
-    .lesson-name {
-      font-size: 72px;
-      width: 100%;
-      text-align: center;
-      position: absolute;
-      top: 40%;
-    }
-  }
-  .download-time {
-    background-color: rgba($color: #000000, $alpha: 0.36);
-    border-radius: 20px;
-    font-size: 36px;
-    padding: 20px;
-    box-sizing: border-box;
-    position: absolute;
-    text-align: center;
-    width: 70%;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 }
-.lesson-content {
-  .lesson-btns {
-    display: flex;
-    button {
-      margin-right: 20px;
-      font-size: 28px;
+.belong-type {
+  display: flex;
+  justify-content: center;
+  span {
+    font-size: 14px;
+    color: #101010;
+  }
+  .btns {
+    font-size: 14px;
+    color: #656565;
+    .btn {
       border: 0;
+      background-color: transparent;
+      box-sizing: border-box;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .btn.active {
+      background-color: #1890ff;
+      color: white;
     }
   }
-  .description {
-    margin-top: 50px;
-    font-size: 20px;
+}
+.other-option {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  span {
+    margin-right: 20px;
   }
-  .images {
+  .option-list {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    .option-item {
+      margin: 0 20px;
+    }
+  }
+}
+.lesson-list {
+  box-sizing: border-box;
+  padding: 10px 30px;
+  .lesson-item {
+     display: flex;
+     flex-direction: column;
+     .lesson-content {
+      font-size: 16px;
+      color: #101010;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      padding: 10px 40px;
+      .title {
+      font-weight: bold;
+
+      }
+      .description {
+        color: #929292;
+        font-size: 14px;
+      }
+     }
+     .info {
+      display: flex;
+      justify-content: space-between;
+      .time {
+        font-size: 12px;
+        color: #929292;
+      }
+     }
   }
 }
 </style>
+<style lang="scss"></style>

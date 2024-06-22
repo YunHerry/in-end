@@ -80,76 +80,92 @@ const rate = ref("不限");
 <style lang="scss" scoped>
 /** */
 .content {
-  .search-content {
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    .search-btn {
-      background-color: #1890ff;
-      border: 0;
-      width: 104px;
-      height: 60px;
-      color: #ffffff;
-      font-size: 14px;
-    }
+  .el-card {
+    margin: 30px;
   }
-  .belong-type {
+}
+.lesson-info {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .teacher-info {
+    box-sizing: border-box;
+    padding: 10px;
     display: flex;
-    justify-content: space-around;
-    .btns {
-      .btn {
-        font-size: 14px;
-        border: 0;
-        padding: 2px 12px;
-        color: white;
-      }
-      .btn.active {
-        background-color: #1890ff;
-      }
+    flex-direction: column;
+    .name {
+      font-size: 28px;
+      color: #222222;
     }
-  }
-  .other-option {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 14px;
-    .option-list {
-      display: flex;
-
-      .option-item {
-        display: flex;
-        align-items: center;
-        color: #656565;
-      }
-    }
-  }
-  .lesson-list {
-    width: 100%;
-    display: flex;
-
-    .lesson-item {
-      color: #101010;
+    .cart {
       font-size: 16px;
-      .content {
-        padding: 25px;
-        box-sizing: border-box;
-        .info {
-          display: flex;
-          justify-content: space-between;
-          .time {
-            color: #929292;
-            font-size: 12px;
-          }
-        }
-      }
-      .description {
-        color: #929292;
-        font-size: 14px;
-        margin-top: 6px;
-        margin-bottom: 15px;
-      }
+      color: #666666;
     }
+  }
+  .download-size {
+    .unit {
+      color: #999999;
+      font-size: 16px;
+    }
+    .size {
+      font-size: 28px;
+      color: #f7c160;
+    }
+  }
+}
+.audio {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 670px;
+  position: relative;
+  .mask {
+    width: 80%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.6);
+    color: white;
+
+    position: absolute;
+    .lesson-name {
+      font-size: 72px;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      top: 40%;
+    }
+  }
+  .download-time {
+    background-color: rgba($color: #000000, $alpha: 0.36);
+    border-radius: 20px;
+    font-size: 36px;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    text-align: center;
+    width: 70%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.lesson-content {
+  .lesson-btns {
+    display: flex;
+    button {
+      margin-right: 20px;
+      font-size: 28px;
+      border: 0;
+    }
+  }
+  .description {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  .images {
+    display: flex;
+    justify-content: space-between;
   }
 }
 </style>
