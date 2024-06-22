@@ -38,7 +38,7 @@
       </div>
       <div class="publish-content" style="flex: 8">
         <div class="publish-btns">
-          <RouterLink class="btn" v-for="btn in publishBtns">{{
+          <RouterLink class="btn" v-for="btn in publishBtns" :to="''">{{
             btn.name
           }}</RouterLink>
         </div>
@@ -176,6 +176,10 @@ const publishBtns = [
           .secondary-title {
             font-size: 12px;
           }
+        }
+        .more-work {
+          flex: 1;
+          text-align: right;
         }
       }
     }
