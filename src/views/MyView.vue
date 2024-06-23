@@ -44,6 +44,28 @@
         </div>
         <div class="publish-input">
           <!-- formdata -->
+          <div class="info">
+            <div class="input-title">
+              <span>视频标题</span>
+              <input />
+            </div>
+            <div class="input-introlction">
+              <span>视频简介</span>
+              <textarea />
+            </div>
+          </div>
+          <div class="upload-video">
+            <span>点击上传视频</span>
+            <button class="upload-btn">
+              <el-icon>
+                <Star />
+              </el-icon>
+              <div>上传图片</div>
+            </button>
+            <div class="support-type">
+              支持格式：.jpg .png .svg .gif ，单个文件不能超过5MB
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -205,6 +227,68 @@ const publishBtns = [
         padding: 25px 60px;
         display: block;
         text-align: center;
+      }
+    }
+    .publish-input {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-sizing: border-box;
+      padding: 10px 50px;
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+          font-size: 18px;
+          color: #101010;
+          margin-right: 10px;
+        }
+        input {
+          outline: none;
+          color: #888888;
+          padding: 4px;
+          box-sizing: border-box;
+        }
+        .input-title {
+          display: flex;
+        }
+        .input-introlction {
+          margin-top: 14px;
+          display: flex;
+          textarea {
+            resize: none;
+            height: 100px;
+            width: 181px;
+          }
+        }
+      }
+      .upload-video {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        span {
+          color: #101010;
+          font-size: 20px;
+          font-weight: bold;
+        }
+        button {
+          width: 40%;
+          background-color: transparent;
+          outline: none;
+          font-size: 14px;
+          display: flex;
+          align-items: center;
+          box-sizing: border-box;
+          padding: 8px 20px;
+          border: 1px solid #e5e5ea;
+        }
+        .support-type {
+          color: #aeaeb2;
+          font-size: 12px;
+        }
       }
     }
   }
