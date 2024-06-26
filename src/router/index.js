@@ -14,6 +14,7 @@ import Register from "../views/login/Register.vue";
 import ModifyPwd from "../views/login/ModifyPwd.vue";
 import VailSuccess from "../views/login/VailSuccess.vue";
 import VailFail from "../views/login/VailFail.vue"
+import VideoPlayView from "../views/VideoPlayView.vue";
 const routes = [
   {
     path: "/",
@@ -43,6 +44,9 @@ const routes = [
       path: "mailFail",
       component: VailFail,
     }]
+  },{
+    path: "/videoDetail",
+    component: VideoPlayView
   }
 ];
 const router = createRouter({

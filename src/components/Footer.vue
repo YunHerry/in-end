@@ -2,7 +2,7 @@
   <div class="footer" v-show="show">
     <div class="about">
       <div class="about-title footer-title">关于我们</div>
-      <div class="about-content">
+      <div class="about-content  footer-content">
         Max技术交流平台是由Max工作室成员自主开发的在线交流平台
       </div>
     </div>
