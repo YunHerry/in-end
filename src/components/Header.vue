@@ -1,5 +1,5 @@
 <template>
-  <div class="header">
+  <div class="header" v-show="show">
     <div class="btns">
       <RouterLink class="btn" v-for="item in menus" :to="item.href">{{ item.name }}</RouterLink>
     </div>
@@ -18,8 +18,9 @@
   </div>
 </template>
 <script setup>
+import { computed, onMounted } from 'vue';
 import { RouterLink } from 'vue-router';
-
+import { useRoute } from 'vue-router';
 const menus = [{
   name: "主页",
   href: ""
@@ -35,6 +36,12 @@ const menus = [{
   href: "",
 }
 ]
+  const route = useRoute();
+// onMounted(()=>{
+//   const route = useRoute();
+//   console.log(route)
+// })
+const show = computed(()=>!route.fullPath.includes('login'))
 </script>
 <style lang="scss" scoped>
 .header {
